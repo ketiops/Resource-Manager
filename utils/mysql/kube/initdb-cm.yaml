@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-initdb-config
+  namespace: xrcloud
+data:
+  initdb.sql: |
+    CREATE DATABASE IF NOT EXISTS resourceBoard;
